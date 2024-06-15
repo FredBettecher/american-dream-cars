@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Whatsapp from "@/components/Whatsapp";
 import HomePage from "@/pages/home";
+import ServicesPage from "@/pages/services";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Whatsapp />
       <HomePage />
+      <ServicesPage />
     </main>
   );
 }
