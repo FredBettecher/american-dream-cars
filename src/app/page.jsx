@@ -3,6 +3,7 @@ import Whatsapp from "@/components/Whatsapp";
 import HomePage from "@/pages/home";
 import CallToAction from "@/pages/callToAction";
 import ServicesPage from "@/pages/services";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HomePage />
       <ServicesPage />
       <CallToAction />
+      <Footer />
     </main>
   );
 }
