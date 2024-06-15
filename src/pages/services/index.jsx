@@ -1,3 +1,4 @@
+import { racingSansOne } from "@/fonts/fonts";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { RiShipFill } from "react-icons/ri";
@@ -5,10 +6,10 @@ import { TbTruckDelivery } from "react-icons/tb";
 
 function ServicesPage() {
   return (
-    <section id="services" className="w-screen h-screen flex flex-col items-center justify-center">
-      <h1 className="text-[#046076] text-2xl font-[Xenogears] uppercase">processo de importação</h1>
-      <p className="text-[#046076] text-xl mt-6">Nosso processo de importação é meticuloso e detalhado, garantindo que cada veículo clássico chegue em perfeitas condições.</p>
-      <div className="text-[#046076] mt-16 grid grid-cols-2 px-20 gap-x-48 gap-y-10">
+    <section id="services" className="w-screen h-screen flex flex-col items-center justify-center text-[#046076]">
+      <h1 className={`text-3xl uppercase ${racingSansOne.className}`}>serviço de importação</h1>
+      <p className="text-xl mt-6">Nosso processo de importação é meticuloso e detalhado, garantindo que cada veículo clássico chegue em perfeitas condições.</p>
+      <div className="mt-16 grid grid-cols-2 px-20 gap-x-48 gap-y-10">
         <div className="w-80">
           <RiVerifiedBadgeFill className="text-4xl mb-2" />
           <h3 className="font-bold text-lg mb-2">Seleção</h3>

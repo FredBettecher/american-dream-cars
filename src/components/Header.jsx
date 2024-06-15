@@ -1,6 +1,8 @@
+import { racingSansOne } from "@/fonts/fonts";
+
 function Header() {
   return (
-    <header className="absolute top-0 left-0 flex w-full justify-between items-center pt-4 px-14 uppercase font-[Xenogears] text-sm bg-transparent">
+    <header className={`absolute top-0 left-0 flex w-full justify-between items-center pt-4 px-14 uppercase ${racingSansOne.className} text-2xl bg-transparent`}>
       <div>
         <a href="#home">
           <img src="/logo.webp" className="w-52" alt="American Dream Cars" />

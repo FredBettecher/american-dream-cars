@@ -1,11 +1,5 @@
-import { Lato } from "next/font/google";
 import "./globals.css";
-
-const lato = Lato({
-  subsets: ["latin"],
-  weight: ['100', '300', '400', '700', '900']
-
-});
+import { lato } from "@/fonts/fonts";
 
 export const metadata = {
   title: "American Dream Cars",
