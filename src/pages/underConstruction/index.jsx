@@ -38,7 +38,6 @@ function UnderConstructionPage() {
             <FaSquareYoutube />
           </a>
         </div>
-
         <footer className="text-xs md:text-base w-[70vw] md:w-screen text-center font-[Xenogears]">
           <p>2024 &#169; American Dream Cars. Todos os direitos reservados.</p>
         </footer>
