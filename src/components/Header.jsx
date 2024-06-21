@@ -1,4 +1,5 @@
 import { racingSansOne } from "@/fonts/fonts";
+import Link from "next/link";
 
 function Header() {
   return (
@@ -9,9 +10,9 @@ function Header() {
         </a>
       </div>
       <div className="flex justify-between gap-24">
-        <nav className="cursor-pointer hover:text-[#7B170F]">serviços</nav>
-        <nav className="cursor-pointer hover:text-[#7B170F]">sobre nós</nav>
-        <nav className="cursor-pointer hover:text-[#7B170F]">contato</nav>
+        <nav className="cursor-pointer hover:text-[#7B170F]"><Link href='/servicos'>serviços</Link> </nav>
+        <nav className="cursor-pointer hover:text-[#7B170F]"><Link href='/sobre-nos'>sobre nós</Link></nav>
+        <nav className="cursor-pointer hover:text-[#7B170F]"><Link href='/contato'>contato</Link></nav>
       </div>
     </header>
   );
