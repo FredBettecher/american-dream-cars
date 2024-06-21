@@ -36,7 +36,7 @@ function Footer() {
           </Link>
         </div>
       </div>
-      <p className="text-center mt-6">Copyright &#169; 2024 - Todos os direitos reservados - American Dream Cars</p>
+      <p className="text-center mt-6">American Dream Cars &#169; 2024 - Todos os direitos reservados</p>
     </footer>
 
   );
