@@ -18,7 +18,7 @@ function ContactPage() {
           <p className="ml-2 lg:text-2xl">Facebook</p>
         </Link>
       </div>
-      <form className="mt-8 flex flex-col w-[90%] gap-2 lg:w-[33]">
+      <form className="mt-8 flex flex-col w-[90%] gap-2 lg:w-[33%]">
         <div className="flex items-center">
           <IoMail className="lg:text-4xl text-2xl mr-2" />
           <p className="lg:text-2xl">E-mail</p>
