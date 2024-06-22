@@ -1,5 +1,7 @@
 import { FaSquareFacebook, FaSquareYoutube, FaSquareWhatsapp } from "react-icons/fa6";
 import BackgroundComponent from "../../components/Background";
+import Image from "next/image";
+import Logo from "../../../public/logo.webp";
 
 function UnderConstructionPage() {
   const imagesDesktop = [
@@ -20,7 +22,7 @@ function UnderConstructionPage() {
       <BackgroundComponent imagesDesktop={imagesDesktop} imagesMobile={imagesMobile} />
       <div className="w-screen h-dvh text-[#fff] bg-[#059CC699] fixed top-0 left-0 overflow-y-hidden flex flex-col items-center justify-around">
         <header className="user-select-none pointer-events-none">
-          <img src="/logo.webp" alt="American Dream Cars" className="w-80 mx-auto" />
+          <Image src={Logo} alt="American Dream Cars" className="w-80 mx-auto" />
         </header>
 
         <h1 className="text-xl md:text-4xl font-[Xenogears]">Site em Construção</h1>

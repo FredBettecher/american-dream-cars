@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer className="w-screen bg-[#046076] p-2 lg:px-16 lg:py-4 text-sm lg:text-base">
       <div className="flex flex-col items-center lg:items-start lg:flex-row gap-8 lg:gap-32">
-        <Image src={Logo} className="w-32 lg:w-40 lg:mt-6" />
+        <Image src={Logo} alt="American Dream Cars" className="w-32 lg:w-40 lg:mt-6" />
         <div className="flex gap-2 lg:flex-col">
           <Link className="cursor:pointer hover:text-[#059CC6]" scroll={true} href="#home">Início</Link>
           <Link className="cursor:pointer hover:text-[#059CC6]" scroll={true} href="#services">Serviços</Link>
