@@ -1,19 +1,21 @@
 import Link from "next/link";
 import { IoMail } from "react-icons/io5";
 import { FaSquareFacebook, FaSquarePhone, FaSquareYoutube } from "react-icons/fa6";
+import Image from "next/image";
+import Logo from "../../public/logo.webp"
 
 function Footer() {
   return (
-    <footer className="w-screen bg-[#046076] px-16 py-4">
-      <div className="flex items-start gap-32">
-        <img src="/logo.webp" className="w-40 mt-6" />
-        <div className="flex flex-col gap-2">
+    <footer className="w-screen bg-[#046076] p-2 lg:px-16 lg:py-4 text-sm lg:text-base">
+      <div className="flex flex-col items-center lg:items-start lg:flex-row gap-8 lg:gap-32">
+        <Image src={Logo} className="w-32 lg:w-40 lg:mt-6" />
+        <div className="flex gap-2 lg:flex-col">
           <Link className="cursor:pointer hover:text-[#059CC6]" scroll={true} href="#home">Início</Link>
           <Link className="cursor:pointer hover:text-[#059CC6]" scroll={true} href="#services">Serviços</Link>
           <Link className="cursor:pointer hover:text-[#059CC6]" scroll={true} href="#">Sobre Nós</Link>
           <Link className="cursor:pointer hover:text-[#059CC6]" scroll={true} href="#">Contato</Link>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 text-center lg:text-start">
           <p className="font-bold">Contato</p>
           <div className="flex items-center gap-2">
             <IoMail className="text-2xl" />
