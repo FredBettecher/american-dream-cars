@@ -14,7 +14,7 @@ const BackgroundComponent = ({ imagesDesktop, imagesMobile }) => {
       }
     }, 10000);
     return () => clearInterval(interval);
-  }, [index, imagesDesktop.length]);
+  }, [index, imagesDesktop.length || imagesMobile.length]);
 
   const backgroundImage = width >= 1024 ? imagesDesktop[index] : imagesMobile[index];
 

@@ -7,8 +7,8 @@ function CallToAction() {
     <section id="howItWorks" className="w-scree h-full flex flex-col items-center justify-center text-[#046076] my-8 lg:my-16">
       <h1 className={`text-xl uppercase lg:text-3xl ${racingSansOne.className}`}>pronto para realizar o seu sonho?</h1>
       <div className="flex flex-col lg:flex-row">
-        <p className="text-justify px-2 mt-4 lg:mt-6 lg:px-24 lg:w-[75%] lg:text-xl">Na American Dream Cars, cada carro clássico é tratado como uma obra-prima automotiva, cheia de histórias e emoções únicas. Com nossa expertise e dedicação, trazemos essas lendas do automobilismo para você, preservando sua autenticidade. Deixe-nos transformar seu sonho em realidade e experimente a emoção de possuir um ícone que transcende gerações Junte-se a nós nessa jornada emocionante!</p>
-        <div className="bg-[#046076] flex items-center justify-center mt-20 m-auto w-[10rem] h-[6rem] lg:m-0 lg:w-[14rem] lg:h-[10rem]">
+        <p className="text-[#333333] text-justify px-2 mt-4 lg:mt-6 lg:px-24 lg:w-[75%] lg:text-xl">Na American Dream Cars, cada carro clássico é tratado como uma obra-prima automotiva, cheia de histórias e emoções únicas. Com nossa expertise e dedicação, trazemos essas lendas do automobilismo para você, preservando sua autenticidade. Deixe-nos transformar seu sonho em realidade e experimente a emoção de possuir um ícone que transcende gerações. Junte-se a nós nessa jornada emocionante!</p>
+        <div className="bg-[#046076] flex items-center justify-center mt-20 m-auto w-[10rem] h-[6rem] lg:m-0 lg:mt-20 lg:w-[14rem] lg:h-[10rem]">
           <Image src={BelAir} alt="Chevrolet Bel Air" className="lg:w-[12rem] w-[8rem] shadow-[0px_5px_10px_rgba(0,0,0,0.5)]" />
         </div>
       </div>

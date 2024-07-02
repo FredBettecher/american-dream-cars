@@ -2,7 +2,7 @@
 export default {
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{ts,tsx}"
+    "./pages/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
@@ -21,9 +21,14 @@ export default {
           '0%, 100%': { opacity: '0', scale: '1', transformOrigin: 'center center' },
           '50%': { opacity: '1', scale: '1.1', transformOrigin: 'center center' },
         },
+        textColorChange: {
+          '0%, 100%': { color: '#7B170F' },
+          '50%': { color: '#046076' },
+        },
       },
       animation: {
         'fade-in-out': 'fadeInOut 10s ease-in-out infinite',
+        'text-color-change': 'textColorChange 20s infinite'
       },
     },
   },

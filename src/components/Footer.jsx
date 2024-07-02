@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { IoMail } from "react-icons/io5";
-import { FaSquareFacebook, FaSquarePhone, FaSquareYoutube } from "react-icons/fa6";
+import { FaSquareFacebook, FaSquarePhone, FaSquareYoutube, FaSquareInstagram } from "react-icons/fa6";
 import Image from "next/image";
 import Logo from "../../public/logo.webp"
 
@@ -9,7 +9,7 @@ function Footer() {
     <footer className="w-screen bg-[#046076] p-2 lg:px-16 lg:py-4 text-sm lg:text-base">
       <div className="flex flex-col items-center lg:items-start lg:flex-row gap-8 lg:gap-32">
         <Image src={Logo} alt="American Dream Cars" className="w-32 lg:w-40 lg:mt-6" />
-        <div className="flex gap-2 lg:flex-col">
+        <div className="flex gap-6 lg:flex-col">
           <Link className="cursor:pointer hover:text-[#059CC6]" scroll={true} href="#home">Início</Link>
           <Link className="cursor:pointer hover:text-[#059CC6]" scroll={true} href="#services">Serviços</Link>
           <Link className="cursor:pointer hover:text-[#059CC6]" scroll={true} href="#">Sobre Nós</Link>
@@ -23,7 +23,7 @@ function Footer() {
           </div>
           <div className="flex items-center gap-2">
             <FaSquarePhone className="text-2xl" />
-            <p>+55 (27) 99635-5750</p>
+            <p>(27) 99635-5750</p>
           </div>
         </div>
         <div className="flex flex-col gap-4">
@@ -35,6 +35,10 @@ function Footer() {
           <Link href="https://www.youtube.com/@americandreamcars-wd3fx" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-[#059CC6]">
             <FaSquareYoutube className="text-2xl mr-2" />
             <p>YouTube</p>
+          </Link>
+          <Link href="https://www.instagram.com/americandreamcars.oficial/" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-[#059CC6]">
+            <FaSquareInstagram className="text-2xl mr-2" />
+            <p>Instagram</p>
           </Link>
         </div>
       </div>

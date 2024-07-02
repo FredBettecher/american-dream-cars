@@ -10,7 +10,7 @@ import CarSelectionPage from "@/pages/carSelection";
 
 export default function Home() {
   return (
-    <main>
+    <main className="animate-fade animate-ease-in-out">
       <Header />
       <Whatsapp />
       <HomePage />
