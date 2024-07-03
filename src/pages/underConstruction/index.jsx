@@ -25,7 +25,7 @@ function UnderConstructionPage() {
           <Image src={Logo} alt="American Dream Cars" className="w-80 mx-auto" />
         </header>
 
-        <h1 className="text-xl md:text-4xl font-[Xenogears]">Site em Construção</h1>
+        <h1 className="text-xl md:text-4xl font-[Xenogears]">Página em Construção</h1>
         <p className="text-base md:text-2xl w-[80vw] text-center font-['Crimson_Pro'] font-medium">
           Estamos trabalhando para trazer a melhor experiência em importação de carros clássicos para você.<br />Novidades, em breve!
         </p>

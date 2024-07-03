@@ -2,6 +2,7 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { IoCheckmarkCircleOutline, IoCloseCircleOutline, IoMail } from "react-icons/io5";
+import { motion } from 'framer-motion';
 
 export default function Email() {
   const form = useRef();
@@ -49,11 +50,19 @@ export default function Email() {
     <>
       {alert.visible && (
         <button onClick={() => setAlert({ visible: false, message: '', type: '' })} className={`fixed top-4 right-4 p-4 rounded-lg shadow-lg flex items-center ${alert.type === 'success' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
-          {alert.type === 'success' ? <IoCheckmarkCircleOutline className='mr-2 lg:text-2xl'/> : <IoCloseCircleOutline className='mr-2 lg:text-2xl'/>}
+          {alert.type === 'success' ? <IoCheckmarkCircleOutline className='mr-2 lg:text-2xl' /> : <IoCloseCircleOutline className='mr-2 lg:text-2xl' />}
           {alert.message}
         </button>
       )}
-      <form ref={form} onSubmit={sendEmail} className="mt-8 flex flex-col w-[90%] gap-2 lg:w-[33%] text-[#333333]">
+      <motion.form
+        ref={form}
+        onSubmit={sendEmail}
+        className="mt-8 flex flex-col w-[90%] gap-2 lg:w-[33%] text-[#333333]"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 100 }}
+        transition={{ duration: 0.3, delay: 0.6 }}
+      >
         <div className="flex items-center text-[#046076]">
           <IoMail className="lg:text-4xl text-2xl mr-2" />
           <p className="lg:text-2xl">E-mail</p>
@@ -91,7 +100,7 @@ export default function Email() {
         >
           Faça uma Cotação
         </button>
-      </form>
+      </motion.form>
     </>
   );
 }

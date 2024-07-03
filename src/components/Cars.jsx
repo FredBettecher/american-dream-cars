@@ -22,7 +22,7 @@ export default function Cars() {
     cars.length > 0 && (
       <div
       key={index}
-      className= "animate-fade-left animate-ease-in-out w-[20rem] h-[10rem] m-auto flex items-center justify-center relative lg:m-0 lg:w-[30rem] lg:h-[15rem] lg:mt-56"
+      className= "animate-fade-left animate-duration-[1000ms] animate-ease-in-out w-[20rem] h-[10rem] m-auto flex items-center justify-center relative lg:m-0 lg:w-[30rem] lg:h-[15rem] lg:mt-56"
       style={{ backgroundColor: cars[index].backgroundColor }}
       >
         <Image

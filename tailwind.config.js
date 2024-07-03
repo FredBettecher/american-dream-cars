@@ -28,7 +28,7 @@ export default {
       },
       animation: {
         'fade-in-out': 'fadeInOut 10s ease-in-out infinite',
-        'text-color-change': 'textColorChange 20s infinite'
+        'text-color-change': 'textColorChange 10s ease-in-out infinite'
       },
     },
   },

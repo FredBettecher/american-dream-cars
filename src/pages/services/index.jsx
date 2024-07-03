@@ -1,12 +1,36 @@
+"use client";
 import { racingSansOne } from "@/fonts/fonts";
 import { FaClipboardUser, FaPeopleGroup, FaHandshakeSimple } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 function ServicesPage() {
   return (
-    <section id="section" className="w-screen h-full flex flex-col items-center justify-center text-[#046076] my-8 lg:my-16">
-      <h1 className={`text-xl uppercase lg:text-3xl ${racingSansOne.className}`}>nossos serviços</h1>
-      <p className="text-[#333333] mt-4 text-justify px-2 lg:text-start lg:text-xl lg:px-24">Oferecemos consultoria especializada e suporte contínuo para transformar a aquisição de um carro clássico em um investimento de paixão e história.</p>
-      <div className="flex flex-col items-center lg:flex-row gap-6 mt-8 lg:gap-20 lg:mt-12">
+    <section id="services" className="w-screen h-full flex flex-col items-center justify-center text-[#046076] my-8 lg:my-16">
+      <motion.h1
+      className={`text-xl uppercase lg:text-3xl ${racingSansOne.className}`}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3, delay: 0.3 }}
+      >
+        nossos serviços
+      </motion.h1>
+      <motion.p
+      className="text-[#333333] mt-4 text-justify px-2 lg:text-start lg:text-xl lg:px-24"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3, delay: 0.4 }}
+      >
+        Oferecemos consultoria especializada e suporte contínuo para transformar a aquisição de um carro clássico em um investimento de paixão e história.
+      </motion.p>
+      <motion.div
+      className="flex flex-col items-center lg:flex-row gap-6 mt-8 lg:gap-20 lg:mt-12"
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 100 }}
+      transition={{ duration: 0.3, delay: 0.5 }}
+      >
         <div className="w-80 text-justify">
           <FaClipboardUser className="text-2xl lg:text-4xl mb-2" />
           <h3 className="font-bold mb-2 lg:text-lg">Consultoria Personalizada</h3>
@@ -22,7 +46,7 @@ function ServicesPage() {
           <h3 className="font-bold mb-2 lg:text-lg">Comunidade de Entusiastas</h3>
           <p className="text-[#333333] text-sm lg:text-base">Ao se juntar à American Dream Cars, você faz parte de uma comunidade de entusiastas de veículos clássicos, onde pode compartilhar experiências, conhecimentos e participar de eventos exclusivos.</p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
