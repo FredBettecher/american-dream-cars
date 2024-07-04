@@ -23,7 +23,7 @@ export default {
         },
         textColorChange: {
           '0%, 100%': { color: '#7B170F' },
-          '50%': { color: '#046076' },
+          '50%': { color: '#CD3837' },
         },
       },
       animation: {

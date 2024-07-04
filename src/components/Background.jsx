@@ -19,10 +19,9 @@ const BackgroundComponent = ({ imagesDesktop, imagesMobile }) => {
   const backgroundImage = width >= 1024 ? imagesDesktop[index] : imagesMobile[index];
 
   return (
-    <div
-      className="w-screen h-screen bg-cover transition-[background] ease-linear duration-[800ms] animate-fade-in-out"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
-    />
+    <div className="relative overflow-hidden w-screen h-screen">
+      <img key={index} src={imagesDesktop[index] || imagesMobile[index]} className='absolute inset-0 w-full h-full object-cover transition ease-linear duration-[800ms] animate-fade-in-out' />
+    </div>
   );
 };
 

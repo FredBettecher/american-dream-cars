@@ -5,6 +5,17 @@ import BelAir from "../../../public/images/car2.webp";
 import { motion } from "framer-motion";
 
 function CallToAction() {
+  const scrollIntoTheView = (id) => {
+    let element = document.getElementById(id);
+    if (!element) return;
+
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  };
+
   return (
     <motion.section
       id="howItWorks"
@@ -22,6 +33,7 @@ function CallToAction() {
         </div>
       </div>
       <motion.button
+      onClick={() => scrollIntoTheView('contact')}
       type="submit"
       className={`flex justify-center text-[#FFFCF5] ${racingSansOne.className} uppercase bg-[#046076] rounded h-fit p-2 cursor-pointer hover:bg-[#059CC6] active:scale-95 transition-transform duration-[30ms] ease-linear w-48 mt-20 text-lg lg:text-2xl lg:w-64 lg:my-6`}
       initial={{ scale: 0 }}
