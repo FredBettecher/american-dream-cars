@@ -65,6 +65,7 @@ export default function Email() {
           type='tel'
           name='phone'
           placeholder='Telefone'
+          className="form-input rounded bg-[#FFFCF5] text-sm lg:text-base"
           pattern='[0-9]{2}[0-9]{9}'
           required
         />
