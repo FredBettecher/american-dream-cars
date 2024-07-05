@@ -10,7 +10,7 @@ function ServicesPage() {
       className={`text-xl uppercase lg:text-3xl ${racingSansOne.className}`}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      viewport={{ once: true }}
       transition={{ duration: 0.3, delay: 0.3 }}
       >
         nossos serviços
@@ -19,7 +19,7 @@ function ServicesPage() {
       className="text-[#333333] mt-4 text-justify px-2 lg:text-start lg:text-xl lg:px-24"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      viewport={{ once: true }}
       transition={{ duration: 0.3, delay: 0.4 }}
       >
         Oferecemos consultoria especializada e suporte contínuo para transformar a aquisição de um carro clássico em um investimento de paixão e história.
@@ -28,7 +28,7 @@ function ServicesPage() {
       className="flex flex-col items-center lg:flex-row gap-6 mt-8 lg:gap-20 lg:mt-12"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 100 }}
+      viewport={{ once: true }}
       transition={{ duration: 0.3, delay: 0.5 }}
       >
         <div className="w-80 text-justify">

@@ -10,7 +10,7 @@ function CarSelectionPage() {
         className={`text-xl lg:text-3xl uppercase ${racingSansOne.className}`}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.3, delay: 0.3 }}
       >
         seleções exclusivas de veículos
@@ -19,7 +19,7 @@ function CarSelectionPage() {
         className="text-[#333333] px-2 mt-4 text-justify my-6 lg:text-xl lg:px-24"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.3, delay: 0.4 }}
       >
         Na American Dream Cars, podemos te auxiliar na escolha de veículos clássicos exclusivos e personalizados, proporcionando o acesso aos modelos mais icônicos e raros do automobilismo americano.
@@ -27,7 +27,7 @@ function CarSelectionPage() {
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 100 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.3, delay: 0.5 }}
       >
         <Carousel />

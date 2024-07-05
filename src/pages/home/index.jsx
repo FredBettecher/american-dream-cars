@@ -1,6 +1,5 @@
 'use client';
 import { racingSansOne } from "@/fonts/fonts";
-import Cars from "@/components/Cars";
 import BackgroundComponent from "@/components/Background";
 
 function HomePage() {
@@ -42,7 +41,6 @@ function HomePage() {
               solicite<br />um orçamento
             </button>
           </div>
-          {/* <Cars /> */}
         </div>
       </section>
     </>

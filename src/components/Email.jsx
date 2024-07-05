@@ -3,7 +3,6 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { IoCheckmarkCircleOutline, IoCloseCircleOutline, IoMail } from "react-icons/io5";
 import { motion } from 'framer-motion';
-import { FaSquarePhone } from 'react-icons/fa6';
 
 export default function Email() {
   const form = useRef();
@@ -40,7 +39,7 @@ export default function Email() {
         className="mt-8 flex flex-col w-[90%] gap-2 lg:w-[33%] text-[#333333]"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 100 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.3, delay: 0.6 }}
       >
         <div className="flex items-center text-[#046076]">
@@ -67,7 +66,6 @@ export default function Email() {
           placeholder='Telefone'
           className="form-input rounded bg-[#FFFCF5] text-sm lg:text-base"
           pattern='[0-9]{2}[0-9]{9}'
-          required
         />
         <textarea
           name="message"

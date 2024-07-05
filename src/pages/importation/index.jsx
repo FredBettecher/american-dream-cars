@@ -13,7 +13,7 @@ function ImportationPage() {
       className={`text-xl uppercase lg:text-3xl ${racingSansOne.className}`}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      viewport={{ once: true }}
       transition={{ duration: 0.3, delay: 0.3 }}
       >
         processo de importação
@@ -22,7 +22,7 @@ function ImportationPage() {
       className="text-[#333333] mt-4 px-2 text-justify lg:text-start lg:text-xl lg:px-24"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      viewport={{ once: true }}
       transition={{ duration: 0.3, delay: 0.4 }}
       >
         Nosso processo de importação é meticuloso e detalhado, garantindo que cada veículo clássico chegue em perfeitas condições.
@@ -32,7 +32,7 @@ function ImportationPage() {
         className="w-80"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{opacity: 1, y: 0}}
-        exit={{ opacity: 0, y: 100 }}
+        viewport={{ once: true }}
         transition={{duration: 0.3, delay: 0.5}}
         >
           <RiVerifiedBadgeFill className="text-2xl lg:text-4xl mb-2" />
@@ -43,7 +43,7 @@ function ImportationPage() {
         className="w-80"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{opacity: 1, y: 0}}
-        exit={{ opacity: 0, y: 100 }}
+        viewport={{ once: true }}
         transition={{duration: 0.3, delay: 0.6}}
         >
           <FaMagnifyingGlass className="text-2xl lg:text-4xl mb-2" />
@@ -54,7 +54,7 @@ function ImportationPage() {
         className="w-80"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{opacity: 1, y: 0}}
-        exit={{ opacity: 0, y: 100 }}
+        viewport={{ once: true }}
         transition={{duration: 0.3, delay: 0.7}}
         >
           <RiShipFill className="text-2xl lg:text-4xl mb-2" />
@@ -65,7 +65,7 @@ function ImportationPage() {
         className="w-80"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{opacity: 1, y: 0}}
-        exit={{ opacity: 0, y: 100 }}
+        viewport={{ once: true }}
         transition={{duration: 0.3, delay: 0.8}}
         >
           <TbTruckDelivery className="text-2xl lg:text-4xl mb-2" />

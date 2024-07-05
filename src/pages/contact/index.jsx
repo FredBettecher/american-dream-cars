@@ -12,7 +12,7 @@ function ContactPage() {
         className={`text-xl uppercase lg:text-3xl ${racingSansOne.className}`}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.3, delay: 0.3 }}
       >
         contato
@@ -21,7 +21,7 @@ function ContactPage() {
         className="text-[#333333] mt-4 px-2 text-justify lg:text-start lg:text-xl lg:px-24"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.3, delay: 0.4 }}
       >
         Entre em contato com a nossa equipe e solicite um orçamento gratuito e sem compromisso para a importação do seu carro!
@@ -30,7 +30,7 @@ function ContactPage() {
         className="flex flex-col mt-8 items-center gap-6 lg:flex-row lg:gap-12"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.3, delay: 0.5 }}
       >
         <Link href="https://wa.me/+5527996355750" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-[#059CC6]">
