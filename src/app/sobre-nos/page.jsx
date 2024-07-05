@@ -54,7 +54,7 @@ export default function AboutUs() {
 
         <div className="text-justify px-2 lg:px-24 mt-16 lg:mt-36">
           <motion.p
-            className="lg:text-lg font-bold"
+            className="text-sm lg:text-lg font-bold"
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}

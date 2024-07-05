@@ -1,19 +1,52 @@
+"use client";
 import Link from "next/link";
 import { IoMail } from "react-icons/io5";
 import { FaSquareFacebook, FaSquarePhone, FaSquareYoutube, FaSquareInstagram } from "react-icons/fa6";
 import Image from "next/image";
 import Logo from "../../public/logo.webp"
+import { usePathname, useRouter } from "next/navigation";
 
 function Footer() {
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const scrollIntoTheView = (id) => {
+    let element = document.getElementById(id);
+    if (!element) return;
+
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  };
+
+  const handleNavigation = (e, targetId) => {
+    e.preventDefault();
+    if (pathname !== "/") {
+      router.push(`/#${targetId}`);
+    } else {
+      scrollIntoTheView(targetId);
+    }
+  };
+
   return (
     <footer className="w-screen bg-[#046076] p-2 lg:px-16 lg:py-4 text-sm lg:text-base">
       <div className="flex flex-col items-center lg:items-start lg:flex-row gap-8 lg:gap-32">
         <Image src={Logo} alt="American Dream Cars" className="w-32 lg:w-40 lg:mt-6" />
         <div className="flex gap-6 lg:flex-col">
-          <Link className="cursor:pointer hover:text-[#059CC6]" scroll={true} href="#home">Início</Link>
-          <Link className="cursor:pointer hover:text-[#059CC6]" scroll={true} href="#services">Serviços</Link>
-          <Link className="cursor:pointer hover:text-[#059CC6]" scroll={true} href="#">Sobre Nós</Link>
-          <Link className="cursor:pointer hover:text-[#059CC6]" scroll={true} href="#">Contato</Link>
+          <button className="cursor:pointer hover:text-[#059CC6]" onClick={(e) => handleNavigation(e, '')}>
+            Início
+          </button>
+          <button className="cursor:pointer hover:text-[#059CC6]" onClick={(e) => handleNavigation(e, 'services')}>
+            Serviços
+          </button>
+          <button className="cursor:pointer hover:text-[#059CC6]" onClick={(e) => handleNavigation(e, 'contact')}>
+            Contato
+          </button>
+          <Link className="cursor:pointer hover:text-[#059CC6]" href={'sobre-nos'}>
+            Sobre Nós
+          </Link>
         </div>
         <div className="flex flex-col gap-4 text-center lg:text-start">
           <p className="font-bold">Contato</p>
