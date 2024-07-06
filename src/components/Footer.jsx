@@ -34,7 +34,7 @@ function Footer() {
     <footer className="w-screen bg-[#046076] p-2 lg:px-16 lg:py-4 text-sm lg:text-base">
       <div className="flex flex-col items-center lg:items-start lg:flex-row gap-8 lg:gap-32">
         <Image src={Logo} alt="American Dream Cars" className="w-32 lg:w-40 lg:mt-6" />
-        <div className="flex gap-6 lg:flex-col">
+        <div className="flex gap-6 lg:flex-col lg:items-start">
           <button className="cursor:pointer hover:text-[#059CC6]" onClick={(e) => handleNavigation(e, '')}>
             Início
           </button>
