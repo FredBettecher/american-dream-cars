@@ -20,7 +20,7 @@ const BackgroundComponent = ({ imagesDesktop, imagesMobile }) => {
 
   return (
     <div className="relative overflow-hidden w-screen h-screen">
-      <img key={index} src={backgroundImage} className='absolute inset-0 w-full h-full object-cover transition ease-linear duration-[800ms] animate-fade-in-out' />
+      <img key={index} src={backgroundImage} alt='American Dream Cars' className='absolute inset-0 w-full h-full object-cover transition ease-linear duration-[800ms] animate-fade-in-out' />
     </div>
   );
 };
