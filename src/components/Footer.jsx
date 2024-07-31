@@ -52,7 +52,7 @@ function Footer() {
           <p className="font-bold">Contato</p>
           <div className="flex items-center gap-2">
             <IoMail className="text-2xl" />
-            <p>contato@americandreamcars.com.br</p>
+            <p>importacao@americandreamcars.com.br</p>
           </div>
           <div className="flex items-center gap-2">
             <FaSquarePhone className="text-2xl" />

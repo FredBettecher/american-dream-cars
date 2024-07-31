@@ -11,7 +11,7 @@ function ServicesPage() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.3, delay: 0.3 }}
+      transition={{ duration: 0.3, delay: 0.5 }}
       >
         nossos serviços
       </motion.h1>
