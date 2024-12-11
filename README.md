@@ -4,7 +4,7 @@
 A American Dream Cars é uma empresa especializada na importação de carros clássicos americanos. Este é o projeto do site, que oferece informações detalhadas sobre o processo de importação,
 seleção de veículos icônicos, consultoria personalizada e suporte pós-venda.  
 
-Link para o site: [American Dream Cars](https://americandreamcars.com.br/)
+Link para o site: <a href="[https://example.com](https://americandreamcars.com.br)" target="_blank" rel="noopener noreferrer">American Dream Cars</a>
 
 ## Funcionalidades
 - **Apresentação de Veículos**: Modelos clássicos com descrição e imagens.
